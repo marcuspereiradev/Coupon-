@@ -31,6 +31,9 @@ img {
     font-size: 0.875em;
     border: 1px solid rgba(0,0,0,.2);
 }
+.menu-logo input::before {
+    content: '';
+}
 .search-places {
     border-radius: 0px;
 }
@@ -50,9 +53,6 @@ img {
     width: 100%;
     justify-content: space-between;
 }
-.menu-nav nav ul li {
-    /* padding: 10px 0; */
-}
 .menu-nav nav ul li a {
     display: block;
     color: #57beff;
@@ -67,7 +67,7 @@ img {
 }
 /* BANNER */
 .banner {
-    background: url('../img/banner/banner1.jpg') no-repeat center;
+    background: url('../img/banner/banner1.jpg') no-repeat center center;
     background-size: cover;
     padding: 100px 0;
     color: #fff;
@@ -106,17 +106,34 @@ img {
     background: rgba(255, 212, 0, .6);
     transition: .3s;
 }
+/* MAIN */
+.main-contant {
+    display: flex;
+}
+.all-offers {
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 60px;
+}
+.all-offers h2::after {
+    content: '';
+    display: block;
+    width: 180px;
+    height: 2px;
+    background: #ff5c04;
+    margin: 20px auto;
+}
+
 /* SIDEBAR */
 .sidebar {
-    margin-top: 60px;
-    min-width: 250px;
+    margin-top: 30px;
+    min-width: 200px;
 }
 .nav-sidebar h3 {
     font-weight: normal;
     font-size: 1.125em;
     margin: 0 0 15px 0;
     padding: 5px 0 5px 15px;
-    line-height: 125%;
     color: #444;
     border-left: solid 3px #ff5c04;
     font-weight: bold;
@@ -148,13 +165,28 @@ img {
     font-size: 1em;
     color: #444; 
 }
-
+/* OFFERS AND ORDER */
+.offers-order {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 30px;
+}
+.offers-order h2 {
+    font-size: 1.1em;
+    text-align: center;
+}
 /* THUMBNAILS */
 .larger-thumbnail {
     display: flex;
-    margin: 60px 0 30px 0;
-    border-bottom: 1px solid rgba(0,0,0,0);
-    
+    margin: 30px 0;
+    border: 1px solid rgba(0,0,0,0);
+    padding: 5px;
+}
+.larger-thumbnail:hover {
+    border: 1px solid #ff5c04;
+    border-radius: 5px;
+    transition: .5s;
 }
 .larger-thumbnail p {
     font-size: 1em;
@@ -197,7 +229,7 @@ img {
     flex-wrap: wrap;
 }
 .thumbnail {
-    min-width: 200px;
+    /* min-width: 200px; */
     margin-bottom: 30px;
     position: relative;
     border: 1px solid rgba(0,0,0, .0);
@@ -277,4 +309,110 @@ img {
     border-radius: 5px;
     color: #fff;
     padding: 2px 3px;
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 740px) and (max-width: 959px) {
+    .larger-thumbnail {
+        flex-direction: column;
+    }
+    .larger-thumbnail div:nth-child(2) {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+    .thumbnail {
+        min-width: 200px;
+        margin-bottom: 30px;
+        position: relative;
+        border: 1px solid rgba(0,0,0, .0);
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+/* BUTTON LOAD MORE */
+.load-more {
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #d1d1d1;
+    font-weight: bold;
+    font-size: 0.875em;
+    color: #444;
+    border: none;
+}
+.load-more:hover {
+    background: #666;
+    color: #fff;
+}
+/* FOOTER */
+.footer-container {
+    margin-top: 60px;
+}
+.top-footer {
+    background: #0060d2;
+}
+.footer-nav ul {
+    display: flex;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px dotted #57beff;
+    border-bottom: 1px dotted #57beff;
+}
+.footer-nav ul li {
+    padding: 10px;
+    margin-right: 20px;
+    background: #004fac;
+    border-radius: 5px;
+}
+.footer-nav ul li a {
+    display: block;
+    color: #57beff;
+    font-size: 0.875em;
+    border-bottom: 2px solid #004fac;
+}
+.footer-nav ul li a:hover {
+    border-bottom: 1px solid #57beff;
+}
+.footer-item-nav {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-item p, .card-credits {
+    color: #fff;
+    padding-bottom: 15px;
+    font-size: 1em;
+}
+.footer-item ul li a {
+    margin-bottom: 10px;
+    color: #57beff;
+    font-size: 0.875em;
+    border-bottom: 1px solid #0060d2;
+    line-height: 2em;
+    
+}
+.footer-item ul li a:hover {
+    border-bottom: 1px solid #57beff;
+}
+.bottom-footer {
+    background: #004fac;
+}
+.bottom-footer-content {
+    padding: 30px 0;
+}
+.img-credits {
+    display: flex;
+}
+.img-credits img {
+    width: 70%;
+}
+.bottom-footer-content2 {
+    padding-bottom: 30px;
+}
+.bottom-footer-copyright, .bottom-footer-terms a {
+    color: #57beff;
+    font-size: 0.875em;
 }
