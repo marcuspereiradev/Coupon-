@@ -15,7 +15,7 @@
             <a href="#" class="logo">Coupon</a>
             <input type="text" placeholder="Buscar ofertas, bairros e etc." class="search">
             <input type="text" placeholder="Duque de Caxias" class="search-places">
-            <button>s</button>
+            <button type="submit">s</button>
         </div>
         <div class="menu-nav">
             <nav class="container">
@@ -37,7 +37,12 @@
         <p>Kinoplex.UCI e outras redes estão aqui</p>
         <button>Compre Agora</button>
     </section>
-    <main class="main-container container">
+    <div class="container">
+       <div class="all-offers grid-12">
+           <h2>800 ofertas em Duque de Caxias</h2>
+       </div>
+    </div>
+    <main class="container">
         <div class="sidebar grid-2">
             <nav class="nav-sidebar">
                 <h3>Categorias</h3>
@@ -99,10 +104,16 @@
             </nav>
         </div>
         <section class="grid-10">
-            <div>
+            <section class="grid-12">
+                <div class="offers-order">
+                    <h2>800 ofertas em Duque de Caxias</h2>
+                    <p>ordenar por</p>
+                </div>
+            </section>
+            <div class="grid-12">
                 <a href="#">
                     <div class="larger-thumbnail">
-                        <div class="grid-6"><img src="img/thumbnails/pizzaria.jpg" alt="Rodízio de Pizzas, Massa e Petiscos com Refil de Refrigerante"></div>
+                        <div><img src="img/thumbnails/pizzaria.jpg" alt="Rodízio de Pizzas, Massa e Petiscos com Refil de Refrigerante"></div>
                         <div class="grid-6">
                             <div>
                                 <p>Churrascaria e Pizzaria Estrelas dos Pampas - Duque de Caxias</p>
@@ -277,73 +288,84 @@
                     </a>
                 </div>
             </div>
-        </section> 
+            <a href="#"><button class="load-more">Carregar mais ofertas</button></a>
+        </section>
     </main>
-    <footer>
+    <footer class="footer-container">
         <div class="top-footer">
             <div class="container">
-                <ul>
-                    <li><a href="#">Restaurantes</a></li>
-                    <li><a href="#">Diversão</a></li>
-                    <li><a href="#">Ingressos</a></li>
-                    <li><a href="#">Beleza e Fitness</a></li>
-                    <li><a href="#">Comércio e Serviços</a></li>
-                    <li><a href="#">Projetos Sociais</a></li>
-                </ul>
+                <nav class="footer-nav grid-12">
+                    <ul>
+                        <li><a href="#">Restaurantes</a></li>
+                        <li><a href="#">Diversão</a></li>
+                        <li><a href="#">Ingressos</a></li>
+                        <li><a href="#">Beleza e Fitness</a></li>
+                        <li><a href="#">Comércio e Serviços</a></li>
+                        <li><a href="#">Projetos Sociais</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="container">
-                <div class="footer-nav">
-                    <p>Coupon</p>
-                    <ul>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav">
-                    <p>Ofertas</p>
-                    <ul>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav">
-                    <p>Parceiros</p>
-                    <ul>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav">
-                    <p>Central de Ajuda</p>
-                    <ul>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                    </ul>
+                <div class="footer-item-nav grid-12">
+                    <div class="footer-item">
+                        <p><strong>Coupon</strong></p>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <p><strong>Ofertas</strong></p>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <p><strong>Parceiros</strong></p>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <p><strong>Central de Ajuda</strong></p>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="bottom-footer">
-            <div class="container">
-                <div>
-                    <p>Cartões de Crédito</p>
-                    <div><img src="" alt=""></div>
+            <div class="container bottom-footer-content">
+                <div class="grid-4">
+                    <p class="card-credits"><strong>Cartões de Crédito</strong></p>
+                    <div class="img-credits">
+                        <div><img src="../Web/img/credits/elo-logo.png" alt="Elo"></div>
+                        <div><img src="../Web/img/credits/Hipercard-logo-5.png" alt="Hipercard"></div>
+                        <div><img src="../Web/img/credits/MasterCard-Logo.png" alt="MasterCard"></div>
+                        <div><img src="../Web/img/credits/visa-logo.png" alt="Visa"></div>
+                    </div>
                 </div>
-                <div>
-                    <div>
-                        <p>© Coupon, LTDA. Todos os direitos reservados. CNPJ 00.000.000/0000-00</p>
-                        <p>Rodovia José Luiz , 1111, Bloco A, Torre I, Salas 777,888,999 e 000, João Paulo, Rio de Janeiro, RJ, CEP 00000-000</p>
-                    </div>
-                    <div>
-                        <a target="_blank" href="#">Termos de uso</a> | <a target="_blank" href="#">Política de Privacidade</a>
-                    </div>
+                
+            </div>
+            <div class="container bottom-footer-content2">
+                <div class="bottom-footer-copyright grid-8">
+                    <p>© Coupon, LTDA. Todos os direitos reservados. CNPJ 00.000.000/0000-00</p>
+                    <p>Rodovia José Luiz , 1111, Bloco A, Torre I, Sala 000, João Paulo, Rio de Janeiro, RJ, CEP 00000-000</p>
+                </div>
+                <div class="bottom-footer-terms grid-4">
+                    <a target="_blank" href="#">Termos de uso</a> | <a target="_blank" href="#">Política de Privacidade</a>
                 </div>
             </div>
         </div>
