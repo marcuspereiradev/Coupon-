@@ -1,0 +1,50 @@
+/* MOBILE */
+@media only screen and (max-width: 739px) {
+    /* MENU LOGO */
+    .menu-logo-content {
+        flex-direction: column;
+        padding: 20px 0 0;
+    }
+    .logo, .search, .search-places {
+        margin-bottom: 30px;
+    }
+    /* SIDEBAR */
+    .sidebar {
+        display: none;
+    }
+    /* THUMBNAILS */
+    .larger-thumbnail a {
+        flex-direction: column;
+    }
+    .larger-thumbnail div:nth-child(2) {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+    .thumbnail {
+        width: calc(100% - 20px);
+    }
+    /* FOOTER */
+    .footer-item {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .bottom-footer-terms {
+        padding-top: 30px;
+    }
+}
+/* TABLET */
+
+@media only screen and (min-width: 740px) and (max-width: 959px) {
+    .larger-thumbnail a {
+        flex-direction: column;
+    }
+    .larger-thumbnail div:nth-child(2) {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+    .thumbnail {
+        width: calc(50% - 20px);
+    }
+}
