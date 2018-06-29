@@ -1,5 +1,93 @@
 /* MOBILE */
-@media only screen and (max-width: 739px) {
+@media only screen and (max-width: 767.98px) {
+    /* BUTTON MOBILE */
+    .btn-mobile-content {
+        position: absolute;
+        padding: 20px;
+    }
+    .mobile-btn {
+        display: block;
+        color: blue;
+        width: 36px;
+        height: 36px;
+        border-top: 4px solid;
+        float: left;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .mobile-btn::after, .mobile-btn::before {
+        content: '';
+        display: block;
+        height: 4px;
+        margin-top: 6px;
+        background: currentColor;
+        position: relative;
+        transition: transform .2s ease;
+    }
+
+    #check:checked ~.mobile-btn:hover {
+        border-top-color: transparent;
+    }
+
+    #check:checked ~.mobile-btn:hover::after {
+        margin-top: 0px;
+        top: 2px;
+        transform: rotate(45deg);
+    }
+
+    #check:checked ~.mobile-btn:hover::before {
+        margin-top: 0px;
+        top: 6px;
+        transform: rotate(135deg);
+    }
+    #check:checked.menu-nav {
+        left: 100px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /* MENU LOGO */
     .menu-logo-content {
         flex-direction: column;
@@ -36,7 +124,7 @@
 }
 /* TABLET */
 
-@media only screen and (min-width: 740px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
     .larger-thumbnail a {
         flex-direction: column;
     }

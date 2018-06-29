@@ -13,6 +13,26 @@ img {
     max-width: 100%;
     border-radius: 5px;
 }
+.btn-thumbnail-style {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #ff5c04;
+    padding: 12px 15px;
+    width: 130px;
+    margin-top: 15px;
+    font-weight: 400;
+    background: none;
+    border: 1px solid #ff5c04;
+    border-radius: 5px;
+}
+.btn-thumbnail-style:hover {
+    color: #fff;
+    background: #ff5c04;
+    transition: .5s;
+}
+ #check {
+        display: none;
+    }
 
 /* HEADER */
 .logo {
@@ -70,7 +90,13 @@ img {
     transition: .3s;
 }
 
-@media only screen and (max-width: 739px) {
+@media only screen and (max-width: 767.98px)  {
+    .menu-nav {
+        position: absolute;
+        width: 100%;
+        top: 75px;
+        /* left: -150px; */
+    }
     .menu-nav nav ul {
         flex-direction: column;
     }
@@ -219,24 +245,6 @@ img {
     font-size: 1.75em;
     color: #ff5c04;
 }
-.larger-thumbnail button {
-    font-size: 1em;
-    text-transform: uppercase;
-    color: #ff5c04;
-    padding: 12px 15px;
-    width: 130px;
-    margin-top: 15px;
-    font-weight: 400;
-    background: none;
-    border: 1px solid #ff5c04;
-    border-radius: 5px;
-}
-.larger-thumbnail button:hover {
-    color: #fff;
-    background: #ff5c04;
-    transition: .5s;
-}
-
 .all-thumbnails {
     display: flex;
     flex-wrap: wrap;
