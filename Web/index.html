@@ -13,6 +13,12 @@
 <body>
     <header>
         <div class="menu-logo container">
+            <div class="btn-mobile-content">
+                <label for="check">
+                    <input type="checkbox" id="check">
+                    <span class="mobile-btn"></span>
+                </label>
+            </div>
             <div class="gutter menu-logo-content">
                 <a href="#" class="logo">Coupon</a>
                 <input type="text" placeholder="Buscar ofertas, bairros e etc." class="search">
@@ -110,7 +116,14 @@
         <section>
             <div class="offers-order gutter">
                 <h2>800 ofertas em Duque de Caxias</h2>
-                <p>ordenar por</p>
+                <select name="" id="">
+                    <option value="ordenar por">ordenar por</option>
+                    <option value="destaques">destaques</option>
+                    <option value="mais vendidos">mais vendidos</option>
+                    <option value="menor preço">menor preço</option>
+                    <option value="mais recentes">mais recentes</option>
+                    <option value="mais recentes">mais próximos</option>
+                </select>
             </div>
             <div class="larger-thumbnail gutter">
                <a href="#">
@@ -124,7 +137,7 @@
                             <span>R$</span> 
                             <span>32,90</span>
                         </div>
-                        <button>Ver oferta</button>
+                        <button class="btn-thumbnail-style">Ver oferta</button>
                     </div>
                 </a>
             </div>
