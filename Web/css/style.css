@@ -1,4 +1,8 @@
 /* GERAL */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+} 
 body {
     font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
@@ -31,7 +35,7 @@ img {
     transition: .5s;
 }
  #check {
-        display: none;
+    display: none;
     }
 
 /* HEADER */
@@ -62,6 +66,9 @@ img {
 .search-places input {
     padding: 10px;
     flex: 1;
+    font-size: 0.875em;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px 0px 0px 5px;
 }
 .search-places button {
     border-radius: 0px 5px 5px 0px;
@@ -88,18 +95,6 @@ img {
 .menu-nav nav ul li a:hover {
     color: #fff;
     transition: .3s;
-}
-
-@media only screen and (max-width: 767.98px)  {
-    .menu-nav {
-        position: absolute;
-        width: 100%;
-        top: 75px;
-        /* left: -150px; */
-    }
-    .menu-nav nav ul {
-        flex-direction: column;
-    }
 }
 /* BANNER */
 .banner {
@@ -207,10 +202,12 @@ img {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 .offers-order h2 {
     font-size: 1.1em;
     text-align: center;
+    margin-right: 20px;
 }
 /* THUMBNAILS */
 .larger-thumbnail a {
