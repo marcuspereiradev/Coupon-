@@ -1,0 +1,28 @@
+/* MOBILE */
+@media only screen and (max-width: 767.98px) {
+
+    /* THUMBNAILS */
+    .larger-thumbnail-detail a {
+        flex-direction: column;
+    }
+    .larger-thumbnail-detail div:nth-child(2) {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+    .detail-content {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+    
+}
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .larger-thumbnail-detail a {
+        flex-direction: column;
+    }
+    .larger-thumbnail-detail div:nth-child(2) {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+}
