@@ -1,3 +1,21 @@
+/* GERAL */
+.btn-detail-thumbnail-style {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background: #ff5c04;
+    color: #fff;
+    padding: 25px 80px;
+    margin: 15px 0;
+    font-weight: bold;
+    border: 1px solid #ff5c04;
+    border-radius: 5px;
+}
+.btn-detail-thumbnail-style:hover {
+    color: #fff;
+    background: #e57133;
+    transition: .5s;
+}
+/* BREADCRUMP */
 .breadcrump {
     display: flex;
 }
@@ -23,43 +41,55 @@
     border: 1px solid rgba(0,0,0,0);
     padding: 5px;
 }
-.larger-thumbnail-detail a:hover {
-    border: 1px solid #ff5c04;
-    border-radius: 5px;
-    transition: .5s;
-}
 .larger-thumbnail-detail-content {
     margin-left: 20px;
+    text-align: center;
+    position: sticky;
+    top: 17rem;
 }
-.larger-thumbnail-detail p {
-    font-size: 1em;
+.sale-price span:nth-child(1) {
+    font-size: 0.875em;
     color: #666;
+    display: block;
     margin-bottom: 10px;
 }
-.larger-thumbnail-detail h3 {
+.sale-price span:nth-child(2) {
     font-size: 1.375em;
     color: #444;
-    margin-bottom: 10px;
+    font-weight: bold;
 }
-.larger-thumbnail-detail span:nth-child(1) {
+.sale-price span:nth-child(3) {
+    font-size: 4em;
+    color: #444;
+    font-weight: bold;
+}
+.sale-price span:nth-child(4) {
     font-size: 1.375em;
-    color: #ff5c04;
+    color: #444;
+    font-weight: bold;
 }
-.larger-thumbnail-detail span:nth-child(2) {
-    font-size: 1.75em;
-    color: #ff5c04;
+.qtd-sold span:first-child {
+    font-size: 1.375em;
+    font-weight: bold;
+    color: #666;
+    display: block;
+}
+.qtd-sold:last-child {
+    font-size: 0.875em;
+    color: #666;
+    display: block;
 }
 /* DETAIL CONTENT */
 .title-section {
     font-size: 1.2em;
     font-weight: bold;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .description-section {
     padding-bottom: 20px;
     font-size: 1em;
-    line-height: 1.4em;
+    line-height: 1.5em;
 }
 
 .content-section {
@@ -69,10 +99,15 @@
 }
 .content-section li {
     padding-bottom: 20px;
-    line-height: 1.4em;
+    line-height: 1.5em;
 }
 
 .detail-content {
     width: calc(60% - 20px);
     
+}
+.sticky {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
 }
