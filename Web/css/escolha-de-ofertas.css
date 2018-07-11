@@ -1,39 +1,76 @@
 /* GERAL */
-.btn-detail-thumbnail-style {
-    font-size: 1.5em;
+.choose-btn-buy {
+    font-size: 1.1em;
     text-transform: uppercase;
     background: #ff5c04;
     color: #fff;
-    padding: 25px 80px;
-    margin: 15px 0;
+    padding: 5px 10px;
     font-weight: bold;
-    border: 1px solid #ff5c04;
+    border: none;
     border-radius: 5px;
+    align-self: center;
 }
-.btn-detail-thumbnail-style:hover {
+.choose-btn-buy:hover {
     color: #fff;
     background: #e57133;
     transition: .5s;
 }
 /* BREADCRUMP */
-.breadcrump {
+.choose-breadcrump {
     display: flex;
 }
-.breadcrump li {
+.choose-breadcrump li {
     margin-right: 10px;
     padding: 20px 0;
 }
-.breadcrump li a {
+.choose-breadcrump li a {
     color: #666;
     font-size: 0.875em;
 }
 
-.detail-title a {
+.choose-title a {
     font-size: 1.625em;
     color: #444;
     line-height: 1.4em;
 }
-
+/* CHOOSE CONTENT */
+.choose-title-section {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.choose-offer {
+    display: flex;
+}
+.choose-description {
+    font-size: 1em;
+    line-height: 1.5em;
+    flex: 4;
+    min-width: 400px;
+}
+.choose-counter {
+    flex: 1;
+    align-self: center;
+    text-align: center;
+    min-width: 100px;
+    font-size: 1.5em;
+}
+.choose-input-counter {
+    width: 30px;
+    border: none;
+    color: #ff5c04;
+}
+.btn-more, .btn-less {
+    border: none;
+    color: #ff5c04;
+    background: none;
+}
+.choose-price {
+    flex: 1;
+    align-self: center;
+    text-align: center;
+    min-width: 100px;
+}
 /* THUMBNAIL */
 .larger-thumbnail-detail a {
     display: flex;
@@ -87,30 +124,4 @@
     color: #666;
     display: block;
 }
-/* DETAIL CONTENT */
-.title-section {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 20px 0;
-}
 
-.description-section {
-    padding-bottom: 20px;
-    font-size: 1em;
-    line-height: 1.5em;
-}
-
-.content-section {
-    padding-left: 20px;
-    list-style: disc;
-    font-size: 1em;
-}
-.content-section li {
-    padding-bottom: 20px;
-    line-height: 1.5em;
-}
-
-
-.sticky {
- 
-}
