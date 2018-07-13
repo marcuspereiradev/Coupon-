@@ -50,7 +50,7 @@
         margin-bottom: 30px;
     }
     .search, .search-places {
-        margin-right: 20px;
+      width: calc(100% - 20px);
     }
     .search {
         border-radius: 5px;
