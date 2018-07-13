@@ -13,7 +13,12 @@
         width: calc(100% - 20px);
         margin: 0 auto;
     }
-    
+    .larger-thumbnail-detail-content {
+        display: block;
+    }
+    .larger-thumbnail-detail-content-sticky {
+        display: none;
+    }
 }
 /* TABLET */
 

@@ -55,6 +55,9 @@
     .search {
         border-radius: 5px;
     }
+    .search-places input {
+        border-radius: 5px 0 0 5px;
+    }
     /* MENU NAV */
     .menu-nav {
         position: absolute;

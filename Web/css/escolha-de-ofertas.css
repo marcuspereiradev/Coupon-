@@ -1,17 +1,19 @@
 /* GERAL */
+.choose-content {
+    width: 100%;
+}
 .choose-btn-buy {
-    font-size: 1.1em;
+    font-size: 0.875em;
     text-transform: uppercase;
     background: #ff5c04;
     color: #fff;
     padding: 5px 10px;
-    font-weight: bold;
+    font-weight: normal;
     border: none;
     border-radius: 5px;
     align-self: center;
 }
 .choose-btn-buy:hover {
-    color: #fff;
     background: #e57133;
     transition: .5s;
 }
@@ -24,7 +26,7 @@
     padding: 20px 0;
 }
 .choose-breadcrump li a {
-    color: #666;
+    color: #999;
     font-size: 0.875em;
 }
 
@@ -38,15 +40,29 @@
     font-size: 1.2em;
     font-weight: bold;
     margin: 20px 0;
+    background: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.choose-offer-content {
+    padding: 0 20px;
 }
 .choose-offer {
     display: flex;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
 }
 .choose-description {
-    font-size: 1em;
     line-height: 1.5em;
     flex: 4;
-    min-width: 400px;
+}
+.choose-description h4 {
+    font-size: 1.1em;
+}
+.choose-description p {
+    font-size: 0.875em;
+    color: #999;
 }
 .choose-counter {
     flex: 1;
@@ -71,57 +87,37 @@
     text-align: center;
     min-width: 100px;
 }
-/* THUMBNAIL */
-.larger-thumbnail-detail a {
+.choose-price span:nth-child(1) {
+    font-size: 0.875em;
+}
+.choose-price span:nth-child(2) {
+    font-size: 1.2em;
+}
+.choose-total-sum {
     display: flex;
-    margin: 30px 0;
-    border: 1px solid rgba(0,0,0,0);
-    padding: 5px;
+    justify-content: flex-end;
+    padding: 20px 0;
 }
-.larger-thumbnail-detail-content {
-    margin-left: 20px;
-    text-align: center;
-    display: none;
-}
-.larger-thumbnail-detail-content-sticky {
-    width: calc(100% - 20px);
-    margin-left: 20px;
-    text-align: center;
-    position: sticky;
-    top: 5rem;
-    margin-top: 10rem;
-    
-}
-.sale-price span:nth-child(1) {
-    font-size: 0.875em;
-    color: #666;
-    display: block;
-    margin-bottom: 10px;
-}
-.sale-price span:nth-child(2) {
-    font-size: 1.375em;
-    color: #444;
+.choose-total-sum span {
+    font-size: 1.5em;
     font-weight: bold;
-}
-.sale-price span:nth-child(3) {
-    font-size: 4em;
-    color: #444;
-    font-weight: bold;
-}
-.sale-price span:nth-child(4) {
-    font-size: 1.375em;
-    color: #444;
-    font-weight: bold;
-}
-.qtd-sold span:first-child {
-    font-size: 1.375em;
-    font-weight: bold;
-    color: #666;
-    display: block;
-}
-.qtd-sold:last-child {
-    font-size: 0.875em;
-    color: #666;
-    display: block;
 }
 
+.choose-continue {
+    text-align: right;
+}
+.choose-continue button {
+    font-size: 0.875em;
+    text-transform: uppercase;
+    background: #ff5c04;
+    color: #fff;
+    padding: 10px 100px;
+    font-weight: normal;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+}
+.choose-continue button:hover {
+    background: #e57133;
+    transition: .5s;
+}
