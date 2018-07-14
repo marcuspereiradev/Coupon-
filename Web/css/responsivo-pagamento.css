@@ -1,0 +1,43 @@
+/* MOBILE */
+@media only screen and (max-width: 767.98px) {
+    .pay-tabs-content ul{
+        flex-direction: column;
+    }
+    .pay-tabs-content ul li{
+        margin-right: 0;
+        text-align: center;
+    }
+    .payment-form-fields input {
+        width: 100%;
+    }
+    .form-field1, .form-field2, .form-field3 {
+        display: flex;
+        flex-flow: column;
+    }
+    .form-field1 div:nth-child(1), .form-field2 div:nth-child(1), .form-field3 div:nth-child(1) {
+        width: 100%;
+    }
+    .form-field1 div:nth-child(1) input, .form-field2 div:nth-child(1) input, .form-field3 div:nth-child(1) input, .form-field3 div:nth-child(2) input {
+        width: 100%;
+    }
+    .form-field3 div:nth-child(2) {
+        width: 100%;
+    }
+    .btn-payment-finalize-bank-slip {
+        margin-top: 30px;
+    }
+    
+    /*PAGAMENTO BOLETO*/
+    .bank-slip-content {
+        display: flex;
+        justify-content: center;
+    }
+    .bank-slip {
+        max-width: 70%;
+        flex-flow: column;
+        align-items: center;
+    }
+    .bankslip-barcode {
+        margin-bottom: 30px;
+    }
+}

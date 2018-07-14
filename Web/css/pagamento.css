@@ -81,11 +81,10 @@
     font-size: 0.875em;
 }
 .form-field1 div:nth-child(1), .form-field2 div:nth-child(1), .form-field3 div:nth-child(1) {
-    width: 50%;
-    margin-right: 20px;
+    width: calc(50% - 20px);
 }
 .form-field1 div:nth-child(1) input, .form-field2 div:nth-child(1) input, .form-field3 div:nth-child(1) input, .form-field3 div:nth-child(2) input {
-    width: 100%;
+    width: calc(100% - 20px);
 }
 .form-field3 div:nth-child(2) {
     width: calc(50% - 20px);
