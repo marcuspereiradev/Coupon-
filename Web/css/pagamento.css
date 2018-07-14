@@ -3,7 +3,7 @@
     width: 100%;
 }
 .payment-header-content {
-    border-bottom: 2px solid #eaeaea;
+    border-bottom: 2px solid #c7c7c7;
     margin-bottom: 30px;
 }
 .payment-title {
@@ -13,20 +13,35 @@
     margin-bottom: 30px;
 }
 .pay-tabs-content {
-    border-bottom: 2px solid #eaeaea;
+    border-bottom: 2px solid #c7c7c7;
     margin-bottom: 30px;
 }
 .pay-tabs-content ul{
     display: flex;
 }
 .pay-tabs-content ul li{
-    border-left: 2px solid #eaeaea;
-    border-right: 2px solid #eaeaea;
-    border-top: 2px solid #eaeaea;
+    border-left: 2px solid #c7c7c7;
+    border-right: 2px solid #c7c7c7;
+    border-top: 2px solid #c7c7c7;
     padding: 20px;
     border-radius: 5px 5px 0 0;
     margin-right: 20px;
     color: #3796fc;
+}
+.btn-payment-finalize-bank-slip {
+    font-size: 0.875em;
+    text-transform: uppercase;
+    background: #ff5c04;
+    color: #fff;
+    padding: 10px 100px;
+    font-weight: normal;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+}
+.btn-payment-finalize-bank-slip:hover {
+    background: #e57133;
+    transition: .5s;
 }
 /*PAYMENT CARD*/
 .payment-card-content {
@@ -52,7 +67,7 @@
 
 /*FORM*/
 .payment-form-fields input {
-    border: 2px solid #eaeaea;
+    border: 2px solid #c7c7c7;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -76,8 +91,8 @@
     width: calc(50% - 20px);
 }
 .your-purchase {
-    border-top: 2px solid #eaeaea;
-    border-bottom: 2px solid #eaeaea;
+    border-top: 2px solid #c7c7c7;
+    border-bottom: 2px solid #c7c7c7;
     padding: 20px 0;
 }
 .your-purchase div div {
@@ -86,7 +101,7 @@
 .your-purchase div div div:nth-child(1) {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px dotted #eaeaea;
+    border-bottom: 2px dotted #c7c7c7;
     padding-bottom: 20px;
     width: 100%;
 }
@@ -114,18 +129,46 @@
 .payment-finalize div p a {
     border-bottom: 1px solid;
 }
-.payment-finalize button {
-    font-size: 0.875em;
-    text-transform: uppercase;
-    background: #ff5c04;
-    color: #fff;
-    padding: 10px 100px;
-    font-weight: normal;
-    border: none;
-    border-radius: 5px;
-    align-self: center;
+/*PAGAMENTO BOLETO*/
+.bank-slip-content {
+    padding-bottom: 30px;
 }
-.payment-finalize button:hover {
-    background: #e57133;
-    transition: .5s;
+
+.bank-slip {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+.bankslip-barcode {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    max-width: 240px;
+    color: #666;
+}
+.bankslip-barcode img {
+    padding-bottom: 10px;
+}
+
+.bankslip-pagseguro {
+    display: flex;
+    padding: 20px;
+    border: 2px solid #c7c7c7;
+    border-radius: 5px;
+    align-items: center;
+}
+.bankslip-pagseguro div {
+    border-left: 2px solid #c7c7c7;
+    padding-left: 10px;
+}
+.bankslip-message {
+    width: calc(100% - 20px);
+    text-align: center;
+    background: #e0f3ff;
+    border: 1px solid #0085fa;
+    padding: 30px 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
 }
