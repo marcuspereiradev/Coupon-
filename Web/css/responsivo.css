@@ -108,6 +108,11 @@
     .bottom-footer-terms {
         padding-top: 30px;
     }
+    
+    /*MEUS CUPONS*/
+    .all-thumbnails-my-coupon .thumbnail {
+        width: calc(100% - 20px);
+    }
 }
 /* TABLET */
 
@@ -120,6 +125,11 @@
         margin: 20px 0 0;
     }
     .thumbnail {
+        width: calc(50% - 20px);
+    }
+    
+    /*MEUS CUPONS*/
+    .all-thumbnails-my-coupon .thumbnail {
         width: calc(50% - 20px);
     }
 }
