@@ -436,6 +436,8 @@ img {
     margin-top: 60px;
 }
 .my-cupon-title {
+    display: flex;
+    justify-content: space-between;
     font-size: 1.625em;
     color: #444;
     line-height: 1.4em;
@@ -454,7 +456,7 @@ img {
 }
 /*DETALHE DO CUPOM*/
 .lightbox-detail-my-coupon {
-    display: none;
+    display: block;/*Aqui será display none. Está display block apenas para estilização*/
     position: absolute;
     z-index: 2;
     background: #fff;
@@ -462,10 +464,10 @@ img {
     left: 20%;
     height: 80%;
     width: 60%;
-    padding: 20px;
+    padding: 0 20px;
 }
 .overlay {
-  display: none;
+  display: block;/*Aqui será display none. Está display block apenas para estilização*/
   position: absolute;
   top: 0%;
   left: 0%;
@@ -477,6 +479,9 @@ img {
   opacity: .80;
   filter: alpha(opacity=80);
 }
+.my-cupon-title a {
+    color: #666;
+}
 .detail-thumbnail-my-coupon {
     display: flex;
     margin: 30px 0;
@@ -486,7 +491,8 @@ img {
     color: #c4c4c4;
 }
 .detail-thumbnail-my-coupon-content {
-   margin-left: 20px;
+    margin-left: 20px;
+    min-width: 400px;
 }
 .detail-thumbnail-my-coupon h3 {
    font-size: 1.375em;
@@ -514,6 +520,15 @@ img {
     line-height: 1.4em;
     list-style: disc;
     margin-left: 20px;
+}
+.detail-thumbnail-my-coupon-content2 div:nth-child(2) p:first-child {
+    margin-bottom: 10px;
+}
+.detail-thumbnail-my-coupon-content2 div:nth-child(2) p {
+    line-height: 1.4em;
+}
+.detail-thumbnail-my-coupon-content2 div:nth-child(2) a {
+    color: #3796fc;
 }
 .my-coupon-tabs-content {
     border-bottom: 2px solid #c7c7c7;
@@ -554,4 +569,167 @@ img {
 }
 .my-coupon-icons img {
     margin-bottom: 10px;
+}
+
+/*LIGHTBOX LOGIN-CADASTRO-RECUPERAR*/
+/*CADASTRO*/
+.lightbox-register {
+    display: none;/*Aqui será display none. Está display block apenas para estilização*/
+    position: absolute;
+    z-index: 2;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 470px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,.3);
+}
+
+.lightbox-register-title {
+    background: #f1f1f1;
+    border-bottom: 2px solid #c7c7c7;
+    font-size: 1.375em;
+}
+.lightbox-register-title div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.lightbox-register-title div:nth-child(1) h1, .lightbox-register-title div:nth-child(1) a{
+    font-weight: bold;
+    color: #666;
+}
+
+.lightbox-register-content {
+    padding: 20px 30px;
+}
+
+.btn-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    background: #445ca3;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lightbox-register-fb-icon::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/escolha-de-ofertas/icons/401-facebook.png');
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.lightbox-register-or {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.lightbox-register-or::after, .lightbox-register-or::before {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #c7c7c7;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.lightbox-register-content input {
+    border: 2px solid #c7c7c7;
+    border-radius: 5px;
+}
+.lightbox-register-content [type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.lightbox-register-content div:nth-child(1) {
+    display: flex;
+}
+.lightbox-register-content [type="password"] {
+    width: calc(50% - 2px);
+    padding: 10px;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.lightbox-register-content label{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.lightbox-register-content [type="checkbox"] {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.lightbox-register-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    background: #ff5c04;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.lightbox-register-content div:last-child {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.lightbox-register-content div:last-child a {
+    color: #3796fc;
+}
+/*LOGIN*/
+.lightbox-login {
+    display: none;/*Aqui será display none. Está display block apenas para estilização*/
+    position: absolute;
+    z-index: 2;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 370px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,.3);
+}
+
+.lightbox-login-content [type="password"] {
+    width: 100%;
+}
+
+/*RECUPERAR SENHA*/
+.lightbox-recover {
+    display: block;/*Aqui será display none. Está display block apenas para estilização*/
+    position: absolute;
+    z-index: 2;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 370px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,.3);
 }
