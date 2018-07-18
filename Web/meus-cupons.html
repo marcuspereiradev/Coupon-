@@ -49,27 +49,60 @@
     <div class="lightbox-detail-my-coupon" id="light">
         <h1 class="my-cupon-title">Sua compra</h1>
         <div class="detail-thumbnail-my-coupon">
-            <a href="#">
-                <div><img src="img/home/thumbnails/churrascaria.jpg" alt="Rodízio de Pizzas, Massa e Petiscos com Refil de Refrigerante"></div>
-                <div class="detail-thumbnail-my-coupon-content">
-                    <div>
-                        <h3>Rodízio de Carnes com Buffet Liberado. Mais de 20 tipos de carne</h3>
-                        <p>Data da Compra: <span>10/07/2018</span></p>
-                    </div>
-                    <div>
-                        <p>Quando usar</p>
-                        <p>Use seu cupom até <span>09 de agosto, 2017</span></p>
-                    </div>
-                    <div>
-                        <p>Valido para:</p>
-                        <ul>
-                            <li>Sexta, das 18h às 22h30</li>
-                            <li>Sábado, das 16h às 22h30</li>
-                        </ul>
-                        <p><a href="">Comprar novamente</a></p>
-                    </div>
+            <div><img src="img/home/thumbnails/churrascaria.jpg" alt="Rodízio de Pizzas, Massa e Petiscos com Refil de Refrigerante"></div>
+            <div class="detail-thumbnail-my-coupon-content">
+                <div>
+                    <h3>Rodízio de Carnes com Buffet Liberado. Mais de 20 tipos de carne</h3>
+                    <p>Data da Compra: <span>10/07/2018</span></p>
                 </div>
-            </a>
+                <div>
+                    <p>Quando usar</p>
+                    <p>Use seu cupom até <span>09 de agosto, 2017</span></p>
+                </div>
+                <div>
+                    <p>Valido para:</p>
+                    <ul>
+                        <li>Sexta, das 18h às 22h30</li>
+                        <li>Sábado, das 16h às 22h30</li>
+                    </ul>
+                    <p><a href="">Comprar novamente</a></p>
+                </div>
+            </div>
+        </div>
+        <nav class="my-coupon-tabs-content">
+            <ul>
+                <li>Cupom</li>
+                <li>Destaques</li>
+                <li>Regulamento</li>
+                <li>Local</li>
+            </ul>
+        </nav>
+        <div class="my-coupon-code-icons-content">
+            <div class="my-coupon-code">
+                <p>Código: <span>168588551935567</span></p>
+                <p>Play Kid Diversões Ltda</p>
+                <p>Michael Jackson</p>
+            </div>
+            <div class="my-coupon-icons-content">
+                <div class="my-coupon-icons">
+                    <a href="">
+                        <img src="img/meus-cupons/icons/058-ticket.png" alt="Ver cupom">
+                        <p>Ver cupom</p>
+                    </a>
+                </div>
+                <div class="my-coupon-icons">
+                    <a href="">
+                        <img src="img/meus-cupons/icons/085-printer.png" alt="Imprimir">
+                        <p>Imprimir</p>
+                    </a>
+                </div>
+                <div class="my-coupon-icons">
+                    <a href="">
+                        <img src="img/meus-cupons/icons/273-checkmark.png" alt="ticket">
+                        <p>Usado</p>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <div id="fade" class="overlay"></div>
@@ -78,7 +111,7 @@
         <section>
             <h1 class="my-cupon-title gutter">Outras compras</h1>
             <div class="all-thumbnails all-thumbnails-my-coupon">
-                <div class="thumbnail gutter">
+                <div class="thumbnail gutter" data-js="thumbs">
                     <a href="#">
                         <div>
                             <img src="img/home/thumbnails/churrascaria.jpg" alt="Rodízio de Carnes com Buffet Liberado. Mais de 20 tipos de carne">
@@ -95,7 +128,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="thumbnail gutter">
+                <div class="thumbnail gutter" data-js="thumbs">
                     <a href="#">
                         <div>
                             <img src="img/home/thumbnails/99.jpg" alt="Pague R$0,99 e Ganhe Crédito de R$25 na Primeira Corrida">
@@ -113,7 +146,7 @@
                     </a>
                 </div>
                 
-                <div class="thumbnail gutter">
+                <div class="thumbnail gutter" data-js="thumbs">
                     <a href="#">
                         <div>
                             <img src="img/home/thumbnails/buffet.jpg" alt="Pague R$0,99 e Ganhe Crédito de R$25 na Primeira Corrida">
@@ -220,5 +253,6 @@
             </div>
         </div>
     </footer>  
+    <script src="js/main.js"></script>
 </body>
 </html>
