@@ -733,3 +733,14 @@ img {
     margin: auto;
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,.3);
 }
+.lightbox-recover-content [type="text"] {
+    margin: 20px 0;
+}
+.lightbox-recover-content div {
+    display: flex;
+    justify-content: space-between;
+}
+.lightbox-recover-content a {
+    color: #3796fc;
+    margin-top: 20px;
+}
